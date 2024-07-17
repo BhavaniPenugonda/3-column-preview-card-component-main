@@ -8,7 +8,7 @@
   --grid-item-Luxury-bgcolor:hsl(179, 100%, 13%);
   --h1-button-color:hsl(0, 0%, 95%);
   --p-textcolor:hsla(0, 0%, 100%, 0.75);
-
+  
 }
 .grid{
   display:grid;
@@ -24,48 +24,48 @@
 }
 
 .grid-item-sedans{
-    background-color: var(--grid-item-sedans-bgcolor);
+  background-color: var(--grid-item-sedans-bgcolor);
 }
 
 .grid-item-SUVs{
   background-color: var(--grid-item-SUVs-bgcolor);
 }
- .grid-item-Luxury {
+.grid-item-Luxury {
   background-color: var(--grid-item-Luxury-bgcolor);
- }
- h1{
+}
+h1{
   margin-top: 25px;
   color: var(--h1-button-color);
   font-family:"Big Shoulders Display", sans-serif;
   font-weight: 700;
- }
+}
 
- p{
+p{
   margin-top:25px;
   color:var(--p-textcolor);
   font-family:"Lexend Deca", sans-serif;
   font-weight:400;
   font-size: 15px;
- }
+}
 
- .button{
+.button{
   padding: 10px 20px;
   border: none;
   text-align: center;
   border-radius: 16px;
   margin-top: 80px;
   background-color: var(--h1-button-color);
- }
+}
 
- .button-sedans{
+.button-sedans{
   color: var(--grid-item-sedans-bgcolor);
- }
+}
 
- .button-suv{
+.button-suv{
   color:var(--grid-item-SUVs-bgcolor);
- }
+}
 
- .button-luxury{
+.button-luxury{
   color: var(--grid-item-Luxury-bgcolor);
- }
+}
 
