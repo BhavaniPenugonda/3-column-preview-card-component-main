@@ -69,3 +69,16 @@ p{
   color: var(--grid-item-Luxury-bgcolor);
 }
 
+@media all and (max-width:375px) {
+  .grid{
+    grid-template-columns: 1fr;
+  } 
+
+}
+
+@media all and (min-width: 375px) and (max-width: 1440px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
