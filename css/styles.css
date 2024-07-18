@@ -6,10 +6,12 @@
   --grid-item-sedans-bgcolor: hsl(31, 77%, 52%);
   --grid-item-SUVs-bgcolor:hsl(184, 100%, 22%);
   --grid-item-Luxury-bgcolor:hsl(179, 100%, 13%);
-  --h1-button-color:hsl(0, 0%, 95%);
+  --h2-button-color:hsl(0, 0%, 95%);
   --p-textcolor:hsla(0, 0%, 100%, 0.75);
-  
+  --attribution-a:hsl(228, 45%, 44%); 
 }
+
+/* sets the grid to the center and in 3 columns*/
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
@@ -19,64 +21,103 @@
   border-radius: 10px;
   overflow: hidden;
 }
+
+/* sets the each grid item padding*/
 .grid-item{
   padding:40px;
 }
 
-.grid-item-sedans{
+/*sets the background color to grid sedans.And sets the background color when button is hovered */
+.grid-item-sedans,
+.button-sedans:hover
+{
   background-color: var(--grid-item-sedans-bgcolor);
 }
 
-.grid-item-SUVs{
+/*sets the background color to grid suvs.And sets the background color when button is hovered */
+.grid-item-SUVs,
+.button-suv:hover{
   background-color: var(--grid-item-SUVs-bgcolor);
 }
-.grid-item-Luxury {
+
+/*sets the background color to grid luxury.And sets the background color when button is hovered */
+.grid-item-Luxury,
+.button-luxury:hover {
   background-color: var(--grid-item-Luxury-bgcolor);
 }
-h1{
+/* sets the font of  grid item  Title  */ 
+h2{
   margin-top: 25px;
-  color: var(--h1-button-color);
+  color: var(--h2-button-color);
   font-family:"Big Shoulders Display", sans-serif;
   font-weight: 700;
 }
 
+/* sets the paragraph font of each grid item  */
 p{
-  margin-top:25px;
+  margin:25px 0 30px 0;
   color:var(--p-textcolor);
   font-family:"Lexend Deca", sans-serif;
   font-weight:400;
-  font-size: 15px;
+  font-size: 11px;
+  
 }
 
 .button{
   padding: 10px 20px;
+  font-size: 13px;
   border: none;
   text-align: center;
+  text-decoration: none;
   border-radius: 16px;
-  margin-top: 80px;
-  background-color: var(--h1-button-color);
+  background-color: var(--h2-button-color);
+  cursor:pointer;
+
 }
 
+/* sets the text color and border when button is hovered    */
+.button:hover {
+  color:var(--p-textcolor);
+  border:1px solid white;
+}
+
+/* sets the sedans grid item button background color  */
 .button-sedans{
   color: var(--grid-item-sedans-bgcolor);
 }
 
+/* sets the suvs grid item button background color  */
 .button-suv{
   color:var(--grid-item-SUVs-bgcolor);
 }
 
+/* sets the luxury grid item button background color  */
 .button-luxury{
   color: var(--grid-item-Luxury-bgcolor);
 }
 
-@media all and (max-width:375px) {
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+}
+
+.attribution a { 
+color: var(--attribution-a);
+}
+
+/* Adjusts the grid to the mobile screen  upto 768px */
+@media all and (max-width:768px) {
   .grid{
     grid-template-columns: 1fr;
   } 
-
+  .button{
+    width: 100px;
+    font-size: 12px;
+    padding:5px;
+  }
 }
-
-@media all and (min-width: 375px) and (max-width: 1440px) {
+/* Adjusts the grid to the desktop screen upto 1440px */
+@media all and (min-width: 768px) and (max-width: 1440px) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
